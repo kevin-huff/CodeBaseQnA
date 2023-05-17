@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ask a question about the GitHub repo</h2>
+
+<form method="POST">
+  <label for="question">Question:</label><br>
+  <input type="text" id="question" name="question"><br>
+  <input type="submit" value="Submit">
+</form>
+
+{% if answer %}
+<h2>Answer:</h2>
+<p>{{ answer }}</p>
+{% endif %}
+
+</body>
+</html>
